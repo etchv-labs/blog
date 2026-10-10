@@ -1,0 +1,11 @@
+{
+  "whistler": {
+    "name": "Whistler",
+    "role": "Founder, Etchv",
+    "pseudonym": true,
+    "bio": "Whistler is the pen name of Etchv's founder, borrowed from the etcher who hid a butterfly in every work. Posts cover how invisible watermarks behave in the wild, what detection results mean, and what we learn running the service.",
+    "url": "/about#writing",
+    "image": "/images/blog/authors/whistler.svg"
+  },
+  "etchv": { "name": "Etchv", "organization": true, "url": "/about" }
+}
