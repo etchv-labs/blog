@@ -1,11 +1,17 @@
 {
   "whistler": {
     "name": "Whistler",
-    "role": "Founder, Etchv",
     "pseudonym": true,
-    "bio": "Whistler is the pen name of Etchv's founder, borrowed from the etcher who hid a butterfly in every work. Posts cover how invisible watermarks behave in the wild, what detection results mean, and what we learn running the service.",
-    "url": "/about#writing",
+    "affiliation": "Etchv",
+    "bio": "Whistler is a pen name, borrowed from the etcher who hid a butterfly in every work. Whistler writes Leak Ledger, the weekly roundup of leaked documents, images and video, and essays on how invisible watermarks behave in the wild and what detection results mean, for Etchv.",
+    "summary": "Leak Ledger, the weekly roundup of leaked documents, images and video, and essays on invisible watermarks and detection, by Whistler.",
+    "url": "/blog/author/whistler",
     "image": "/images/blog/authors/whistler.svg"
   },
-  "etchv": { "name": "Etchv", "organization": true, "url": "/about" }
+  "etchv": {
+    "name": "Etchv",
+    "organization": true,
+    "bio": "Posts from the Etchv team: product updates, company news and notes on running the service.",
+    "url": "/about"
+  }
 }

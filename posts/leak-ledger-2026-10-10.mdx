@@ -1,0 +1,41 @@
+---
+title: "Leak Ledger: MLB's lockout memo and German spy files leaked, week of October 5"
+description: "An MLB memo sent to 30 clubs, German intelligence files, client data from an EY breach and more leaks, and what each one shows about tracing a copy."
+date: 2026-10-10
+author: whistler
+category: company-news
+tags: [leaks, insider-threat]
+series: leak-ledger
+cta: detect
+---
+
+Leak Ledger is our weekly roundup of leaked documents, images and video, and what each leak shows about tracing a copy back to where it got out. This week: an MLB memo sent to every club, a German intelligence case, an accounting firm's breach, an extortion crew's own chats, a national ID register and a recorded donor lunch.
+
+<Roundup>
+  <Item headline="MLB's 34-page lockout memo reaches a reporter" date="2026-10-07" source="https://www.nytimes.com/athletic/7670102/2026/10/07/mlb-memo-lockout-plans-teams-players-ban-contact/" sourceName="The Athletic">
+    The league office sent its confidential lockout playbook to owners and senior executives at all 30 clubs on October 1, and a reporter had it within a week. If all 30 copies were identical, the leaked one points at no one; a copy watermarked for each club would carry the ID of the club it went to.
+  </Item>
+  <Item headline="Former German spy chief arrested over classified files" date="2026-10-06" source="https://www.bbc.com/news/articles/c58jzyer1kr0o" sourceName="BBC News">
+    Prosecutors say August Hanning's former chief of staff passed him about 2,000 classified documents for money while still working at the BND. The documents passed along over years went unnoticed until now; when each copy carries an invisible watermark for the person it was issued to, a single recovered page points to whose access it came through.
+  </Item>
+  <Item headline="Goldman Sachs and Man Group clients caught in EY data breach" date="2026-10-06" source="https://www.ft.com/content/2ad1ff25-f08e-4e78-83c9-90e7ea3844ee" sourceName="Financial Times">
+    Notifications sent in recent weeks show that a hack of EY in March and April reached clients of Goldman Sachs' wealth arm and the hedge fund Man Group. When a client's papers sit with an adviser, a leak can start on either side, and a watermark added at each handoff shows whose copy got out.
+  </Item>
+  <Item headline="Extortion group that targets law firms has its own chats leaked" date="2026-10-08" source="https://www.theregister.com/cyber-crime/2026/10/08/money-trail-backs-leaked-chats-from-extortion-crew-that-walks-into-us-law-firms/5302031" sourceName="The Register">
+    Someone published what they say are Silent Ransom Group's internal chats, wallet addresses included, and blockchain researchers matched some of those wallets to ransom payments they were already tracking. The FBI has warned that people posing as IT staff walked into law offices to copy files to USB drives for the group. Files watermarked per matter or per recipient show which ones were taken when they surface.
+  </Item>
+  <Item headline="Denmark's population register exposes 8.8 million records" date="2026-10-06" source="https://www.theregister.com/security/2026/10/06/denmarks-id-register-spills-more-peoples-details-than-the-country-has-residents/5301307" sourceName="The Register">
+    An unauthorized party used a private company's legitimate access to the Central Population Register to pull names, addresses and ID numbers, including records of people who had died or moved abroad. Rows in a register can't carry an invisible watermark, but the PDF reports and scanned documents made from them can, and each should say who it was made for.
+  </Item>
+  <Item headline="Recording from a closed-door Paxton donor lunch" date="2026-10-05" source="https://www.politico.com/news/2026/10/05/paxton-campaign-dc-message-01106548" sourceName="Politico">
+    A guest at a September fundraiser of about a dozen people recorded Texas Senate candidate Ken Paxton's private remarks about his campaign, and more audio from his fundraisers kept surfacing through the week. Nothing that was handed out leaked here; someone pressed record, and a watermark can't reach what a person captures on their own device.
+  </Item>
+</Roundup>
+
+## Why it matters
+
+Half of this week's leaks started with people who were meant to have the material: a memo's recipients, an official with access, a guest at the lunch. The rest got out through a vendor's software, a customer's access to a national register and an extortion crew's own files.
+
+Identical copies make a leak anonymous. When every recipient gets a copy with its own invisible watermark, a leaked page, image or video points back to the copy it came from. [Detection](/docs/api/detect) reads the watermark ID from the leaked file, and you match it to the recipient you recorded when you sent it.
+
+Watermarks don't stop a leak. They can't be added to a recording someone makes in the room, and they don't survive a quote retyped into an article. They change the question from "who could it have been?" to "whose copy is this?", and people who know their copy is watermarked have a reason to think twice before forwarding it. Our guide to [invisible watermarking](/resources/invisible-watermarking) covers where per-recipient watermarks help and where they don't.
