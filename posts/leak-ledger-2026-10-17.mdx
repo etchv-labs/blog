@@ -1,0 +1,30 @@
+---
+title: "Leak Ledger: Trump's ballroom donors and a State Dept. feud leaked, week of October 12"
+description: "Ballroom donor records, a year of State Department emails and an Accenture AI spending cap all reached reporters. What each says about tracing a copy."
+date: 2026-10-17
+author: whistler
+category: company-news
+tags: [leaks, insider-threat]
+series: leak-ledger
+cta: detect
+---
+
+Leak Ledger is our weekly roundup of leaked documents, images and video. Three leaks this week, all from people who were meant to have the material.
+
+<Roundup>
+  <Item headline="White House ballroom donor records reach The Washington Post" date="2026-10-15" source="https://www.cnbc.com/2026/10/15/trump-ballroom-nvidia-cisco-donations.html" sourceName="CNBC">
+    Documents listing 67 contributions above $10,000 to the White House ballroom reached The Washington Post. Records like these usually go to a small circle. Hand each person a PDF with its own invisible watermark, and the copy that surfaces points to the person it was issued to.
+  </Item>
+  <Item headline="A year of State Department emails lands at Politico" date="2026-10-15" source="https://www.politico.com/news/2026/10/15/email-fight-state-department-trump-administration-01119676" sourceName="Politico">
+    Months of email chains between a deputy secretary and a special envoy, at times copied to more than a dozen officials, reached a reporter, and the envoy was out within hours. With that many people on the thread, nobody can say who forwarded it. Plain email text can't be traced, but a watermarked attachment can: each recipient's copy carries a unique forensic ID.
+  </Item>
+  <Item headline="Accenture's $29 AI spending cap reaches 404 Media" date="2026-10-15" source="https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/" sourceName="404 Media">
+    Accenture told many employees it will now spend only $29 a month per person on Claude, and the news reached 404 Media. A message that goes to that many people will get out eventually. A per-recipient watermark won't stop that, but it turns a forwarded copy into a lead instead of a dead end.
+  </Item>
+</Roundup>
+
+## Why it matters
+
+None of this week's leaks needed a hacker. Donor records, an email thread and a staff announcement each went to a known group.
+
+When every copy is identical, a leak is anonymous. When each recipient gets a copy with its own invisible watermark, the leaked file carries its origin with it: [detection](/docs/api/detect) reads the unique forensic ID, and you match it to the recipient you recorded. It doesn't cover text someone retypes or a call someone records, and it doesn't stop a leak. It replaces "who could it have been?" with "whose copy is this?" Our [guide to invisible watermarking](/resources/invisible-watermarking) covers where that works and where it doesn't.
