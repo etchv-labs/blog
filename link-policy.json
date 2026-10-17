@@ -56,6 +56,8 @@
     "*.gov.uk",
     "*.europa.eu",
     "*.gc.ca",
-    "*.gov.au"
+    "*.gov.au",
+    "cloudsecurityalliance.org",
+    "doi.org"
   ]
 }

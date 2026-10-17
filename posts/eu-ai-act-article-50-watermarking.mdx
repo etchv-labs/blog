@@ -1,0 +1,51 @@
+---
+title: "EU AI Act Article 50: what the watermarking rules ask for"
+description: "Since August 2, 2026, providers must make AI-generated content machine-detectable in the EU. What Article 50 requires, the dates, and why metadata falls short."
+date: 2026-10-16
+author: whistler
+category: engineering
+tags: [eu-ai-act, regulation, watermarking]
+cta: expert
+---
+
+Article 50 of the EU AI Act has applied since August 2, 2026. Providers of AI systems that generate images, video, audio or text must make that output "detectable as artificially generated or manipulated," in a machine-readable format. The Cloud Security Alliance's [research note on the deadline](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-article50-watermarking-deadline/) is a good primer. Here is the short version.
+
+## What the law requires
+
+The [Act's text](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689) asks for technical solutions that are "effective, interoperable, robust and reliable," as far as is technically feasible. The Commission's [guidelines](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) call technical feasibility an objective test that doesn't depend on any one provider's resources, though implementation costs still count.
+
+Anyone who uses an AI system to make a deepfake, outside purely personal use, has a separate duty to disclose it. Fines for breaking the transparency rules reach €15 million or 3% of worldwide annual turnover, whichever is higher. For small companies and startups, the lower of the two applies.
+
+## The dates
+
+- **August 2, 2026:** the rules apply. Systems released after this date get no grace period. Content generated before it doesn't need to be watermarked after the fact.
+- **December 2, 2026:** systems already on the market before August must comply. The [Digital Omnibus](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202601744) added this four-month transition, the only one Article 50 got.
+- **February 2, 2027:** signatories of the Commission's code of practice must offer detection that works across providers.
+
+## Two layers, because metadata gets stripped
+
+The Commission's final [Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content), published June 10, 2026, is voluntary. Its signatories commit to at least two machine-readable layers for images, video and audio: digitally signed metadata, and an imperceptible watermark woven into the content itself. Fingerprinting or logging alone isn't enough.
+
+The reason is practical. Metadata is easy to lose. Many platforms strip it on upload, and a screenshot leaves it behind entirely. [NIST](https://doi.org/10.6028/NIST.AI.100-4) notes that metadata is often removed as content spreads. A watermark travels in the pixels and frames.
+
+The code is specific about what the watermark and its detector must survive:
+- recompression, screenshots and changes of file format;
+- cropping, mirroring, rescaling and rotation;
+- print-and-scan and filming a screen;
+- deliberate attempts to copy, remove or forge it, which signatories must test against.
+
+Signatories also commit to free detection, though those with fewer than a million monthly users may charge a reasonable fee for very high volumes.
+
+## What it means in practice
+
+**Providers of generative tools** need both layers and a detector by the dates above. They may use a specialized watermarking provider, but compliance stays their responsibility.
+
+**Platforms** that check uploads for AI content need detection that works on the copy they actually hold, after their own pipeline has resized and recompressed it.
+
+No watermark is impossible to remove, and the code doesn't pretend otherwise. It asks for adversarial testing, and the guidelines expect solutions to keep pace as attacks improve. The honest approach is to test against the transformations your content really goes through.
+
+## Where Etchv fits
+
+Etchv embeds and detects invisible watermarks in images and video, and watermarks PDFs, through one API. That is the watermark layer, not the signed metadata. Recovery depends on what happens to a file, so we ask every customer to test their own workflow. That is the same discipline the code asks for.
+
+This post isn't legal advice. Whether a given system complies is a question for your counsel.
