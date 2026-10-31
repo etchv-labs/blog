@@ -1,0 +1,33 @@
+---
+title: "Leak Ledger: DHS staff records and a Skydance buyout memo leaked, week of October 26"
+description: "A Skydance staff memo, DHS personnel records, a fired Pentagon planner and a Fort Bragg indictment. What each says about tracing a copy."
+date: 2026-10-31
+author: whistler
+category: company-news
+tags: [leaks, insider-threat]
+series: leak-ledger
+cta: detect
+---
+
+Leak Ledger is our weekly roundup of leaked documents, images and video. Four leaks this week: a memo to staff, a dump of personnel records, and two cases that rest on allegations.
+
+<Roundup>
+  <Item headline="Skydance's buyout memo to staff is printed in full by Variety" date="2026-10-26" source="https://variety.com/2026/film/news/skydance-voluntary-buyouts-layoffs-5-days-per-week-in-office-policy-1236931402/" sourceName="Variety">
+    The Monday memo from David Ellison and Ynon Kreiz offered voluntary buyouts and set a five-day office week, and Variety ran the whole text from a copy it obtained. A memo sent to a whole company was always likely to get out. Had each employee been sent a watermarked attachment instead, the copy a reporter holds would point to the employee it was issued to; text that is pasted, retyped or forwarded as plain email points to no one.
+  </Item>
+  <Item headline="Hackers claim to have leaked records on tens of thousands of DHS employees" date="2026-10-29" source="https://www.cnn.com/2026/10/29/politics/hackers-dhs-workers-leak" sourceName="CNN">
+    Distributed Denial of Secrets says a hacktivist group took the data from an internal DHS database linked to employees' single sign-on, and DDoSecrets posted the records online; DHS says it is investigating a potential breach, and a source told CNN some undercover personnel were exposed. If the records came out of a database, as the group says, no copy was handed to anyone, and a watermark has nothing to say about records pulled out of a system.
+  </Item>
+  <Item headline="Pentagon's top military planner fired over what an official says were leaks" date="2026-10-29" source="https://www.cbsnews.com/news/hegseth-fires-pentagons-top-military-planner/" sourceName="CBS News">
+    A Pentagon official told CBS News that Lt. Gen. Brett Sylvia was accused of leaking classified information about the Iran and Russia-Ukraine wars and failed polygraph tests; two other Pentagon sources said those accusations are not true, and the case has been referred to the Justice Department. Whatever the facts, information passed on in conversation is beyond any watermark: it traces a copy of a file, not what someone says.
+  </Item>
+  <Item headline="Former Fort Bragg contractor charged with posting classified imagery online" date="2026-10-30" source="https://www.justice.gov/opa/pr/former-us-government-contractor-arrested-allegedly-leaking-national-defense-information-and" sourceName="U.S. Department of Justice">
+    According to the indictment, a contractor with a Top Secret clearance photographed and removed classified videos and photos of military operations and posted them to a social media site, where others reposted them; he is presumed innocent. Images and video are what a per-recipient watermark is built for: if a copy issued to one person is reposted unchanged, detection can point to that copy. But the indictment says he photographed material, and a photo of a screen, or the recompression a repost goes through, can leave the watermark unrecoverable.
+  </Item>
+</Roundup>
+
+## Why it matters
+
+Only one of this week's leaks is said to involve a hack. The other three involve material held by people with access: a memo sent to a whole workforce and, in accusations that remain unproven, a general and a contractor who held clearances.
+
+Polygraphs and access logs narrow down who could have leaked. They can't say whose copy turned up. When each recipient gets a copy with its own invisible watermark, [detection](/docs/api/detect) reads the unique forensic ID from the leaked file, and you match it to the recipient you recorded. That covers documents, images and video. It doesn't cover audio, retyped or relayed text, records taken from a database, or a recording someone makes themselves, and it doesn't stop a leak. Our [guide to invisible watermarking](/resources/invisible-watermarking) covers where it works and where it doesn't.
