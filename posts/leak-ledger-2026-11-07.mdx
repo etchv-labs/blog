@@ -1,0 +1,33 @@
+---
+title: "Leak Ledger: A White House memo and an EU draft leaked, week of November 2"
+description: "A White House email to 3,000 groups, a draft EU work program, a Korean passenger list and an Ethiopia spying plea. What each says about tracing a copy."
+date: 2026-11-07
+author: whistler
+category: company-news
+tags: [leaks, insider-threat]
+series: leak-ledger
+cta: detect
+---
+
+Leak Ledger is our weekly roundup of leaked documents, images and video. Four leaks this week: a draft and a memo that went to known groups, a spreadsheet that sat on a malware-scanning website for months, and a contractor who admitted passing secrets to a foreign government.
+
+<Roundup>
+  <Item headline="A presidential passenger list with passport details turns up online in South Korea" date="2026-11-03" source="https://www.scmp.com/news/asia/east-asia/article/3373065/south-korea-rushes-reissue-passports-president-lee-wife-after-data-leak" sourceName="South China Morning Post">
+    A spreadsheet with passport details for the 168 people on President Lee Jae Myung's June flight to Europe was uploaded to a malware-scanning website and sat there for about five months, and Seoul is now reissuing passports. An official said the file resembles the format of Foreign Ministry documents but couldn't say definitively where it came from, and investigators are still working out how it got there. Our watermarks cover PDFs, Word and PowerPoint files, images and video, not spreadsheets, so this file as it stood would carry nothing to trace; had the list been shared as a PDF watermarked for each recipient, the uploaded copy could have pointed to whose copy it was.
+  </Item>
+  <Item headline="Former government IT contractor pleads guilty to spying for Ethiopia" date="2026-11-03" source="https://www.justice.gov/opa/pr/former-us-government-contractor-pleads-guilty-spying-ethiopia" sourceName="U.S. Department of Justice">
+    Abraham Teklu Lemma pleaded guilty to conspiring to pass national defense information to Ethiopian officials; the Justice Department says he wrote classified details into handwritten notes and, as an IT administrator, removed electronic files from classified repositories. Handwritten notes carry no watermark, and an administrator copying straight out of a repository isn't holding a copy issued to him, so a per-recipient watermark would not have told investigators anything here.
+  </Item>
+  <Item headline="Draft of the European Commission's 2027 work program reaches Euronews" date="2026-11-04" source="https://www.euronews.com/2026/11/04/europes-military-readiness-plans-at-risk-despite-record-defence-spending" sourceName="Euronews">
+    Euronews reported from a leaked eight-page draft of the Commission's priorities for 2027 on the morning the Commission was expected to endorse and publish it. Drafts like this usually circulate to a limited circle before adoption. If each reader's copy carries its own watermark and the file itself surfaces, detection points to the copy it came from; if a reporter is only read the text or shown it, there is nothing to detect.
+  </Item>
+  <Item headline="White House email tells 3,000 conservative groups it is monitoring their statements" date="2026-11-05" source="https://www.wsj.com/politics/elections/white-house-warns-conservative-groups-it-is-monitoring-their-statements-087b07d0" sourceName="The Wall Street Journal">
+    The Wall Street Journal reported the contents of a memo the White House Office of Public Liaison sent to more than 3,000 conservative organizations, which ended with a highlighted line saying the office monitors their statements; a White House spokesperson told the Journal it wasn't a threat. A message sent to thousands of outside groups was always going to reach reporters, and if the memo was text in the body of the email, it carried no watermark. A watermarked attachment for each group would only say whose copy surfaced, not stop it.
+  </Item>
+</Roundup>
+
+## Why it matters
+
+Three of this week's four stories involve files that sat with a set group of people: a passenger list prepared for a presidential trip, a draft circulated before adoption and a memo emailed to thousands of groups. The fourth is a reminder of what a per-recipient watermark can't reach: an insider who copied secrets by hand and, as an administrator, took files straight from classified repositories.
+
+When each recipient gets a copy with its own invisible watermark, [detection](/docs/api/detect) reads the unique forensic ID from a leaked file, and you match it to the recipient you recorded. That covers documents, images and video. It doesn't cover spreadsheets, audio, retyped or relayed text, or a recording someone makes themselves, and it doesn't stop a leak. Our [guide to invisible watermarking](/resources/invisible-watermarking) covers where it works and where it doesn't.
