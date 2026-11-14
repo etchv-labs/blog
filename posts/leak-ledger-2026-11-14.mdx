@@ -1,0 +1,36 @@
+---
+title: "Leak Ledger: Russian death records and an EU consumer draft leaked, week of November 9"
+description: "Disputed Rosstat records, an EU consumer-law draft, a White House memo, TSMC employee data and a law firm insider case. What each says about tracing a copy."
+date: 2026-11-14
+author: whistler
+category: company-news
+tags: [leaks, insider-threat]
+series: leak-ledger
+cta: detect
+---
+
+Leak Ledger is our weekly roundup of leaked documents, images and video. Five stories this week: a draft and a memo that went to known groups, two sets of records said to come from computer systems, and an insider case that rests on allegations.
+
+<Roundup>
+  <Item headline="Draft of the EU's Digital Fairness Act reaches Euronews before its presentation" date="2026-11-09" source="https://www.euronews.com/2026/11/09/eu-to-blacklist-ten-manipulative-online-design-traps-leaked-draft-shows" sourceName="Euronews">
+    Euronews reported from a draft of the Commission's consumer-protection overhaul two days before it was due to be presented, and a spokesperson said the Commission does not comment on leaks. A pre-adoption draft goes to a limited circle, which is the setting where a per-recipient watermark is most useful: if the file itself surfaces, detection points to the copy it came from. If a reporter is only shown the draft or told what it says, there is nothing to detect.
+  </Item>
+  <Item headline="Records hackers say they took from Rosstat count more than 11,000 foreign deaths in Russia's war" date="2026-11-11" source="https://www.bloomberg.com/news/articles/2026-11-11/over-11-000-foreign-military-deaths-recorded-by-russia-in-war-on-ukraine" sourceName="Bloomberg">
+    Bloomberg analyzed death records from Russia's statistics agency that hacker groups say they took in a cyberattack, and counted more than 11,000 foreign-born or foreign-national fighters among the dead; Rosstat says it found no evidence its databases were compromised or confidential information leaked. If the records were pulled out of a database, they were never issued to anyone as a copy, so a watermark has nothing to say about where they came from.
+  </Item>
+  <Item headline="Stephen Miller's memo on lobbyist meetings reaches Politico" date="2026-11-12" source="https://www.politico.com/news/2026/11/12/stephen-miller-memo-lobbyists-k-street-01163700" sourceName="Politico">
+    Politico obtained a memo from Stephen Miller telling White House staff they need approval from the White House Counsel's office before meeting registered lobbyists about policy at the White House complex. A rule sent to a whole staff was always likely to get out. If it went as text in an email, it carried no watermark; a watermarked attachment for each staffer would only say whose copy surfaced, and only if the file itself did.
+  </Item>
+  <Item headline="TSMC says employee data was posted on an outside website" date="2026-11-12" source="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm" sourceName="TSMC filing with the SEC">
+    In a filing, TSMC says data on some current and former employees was made available on an external website without authorization, that it matches data stored in a cloud service provider's systems, and that so far it has found no evidence its own systems were compromised. Personnel records held in a system aren't copies handed to a person, so a per-recipient watermark would not help trace this.
+  </Item>
+  <Item headline="SEC and prosecutors charge a law firm document specialist with insider trading" date="2026-11-12" source="https://www.sec.gov/files/litigation/complaints/2026/comp26685.pdf" sourceName="U.S. Securities and Exchange Commission">
+    The SEC's complaint alleges that Chetram Balli, who worked as a document processing specialist at a large international law firm, traded in at least eight companies' shares ahead of deals, using confidential information he had access to through his job; federal prosecutors filed a parallel criminal case, and he is presumed innocent. Nothing in the complaint says a document left the firm. A watermark traces a copy that turns up somewhere, not what someone does with what they read, so it would not have flagged this.
+  </Item>
+</Roundup>
+
+## Why it matters
+
+Only two of this week's five stories involve a file sent to a known group: a draft circulated before adoption and a memo to White House staff. The other three are about systems and people with access: records said to be taken from a government database, employee data that matched a vendor's systems, and an employee accused of trading on what he read.
+
+When each recipient gets a copy with its own invisible watermark, [detection](/docs/api/detect) reads the unique forensic ID from a leaked file, and you match it to the recipient you recorded. That covers documents, images and video. It doesn't cover audio, retyped or relayed text, records taken from a database, or information someone acts on without sharing a file, and it doesn't stop a leak. Our [guide to invisible watermarking](/resources/invisible-watermarking) covers where it works and where it doesn't.
