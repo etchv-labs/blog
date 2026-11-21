@@ -1,0 +1,36 @@
+---
+title: "Leak Ledger: Deutsche Bank files and an IRS memo leaked, week of November 16"
+description: "Deutsche Bank's leaked files, an IRS memo, an EU-UK summit draft, a classified Pentagon memo and a Robinhood plea. What each says about tracing a copy."
+date: 2026-11-21
+author: whistler
+category: company-news
+tags: [leaks, insider-threat]
+series: leak-ledger
+cta: detect
+---
+
+Leak Ledger is our weekly roundup of leaked documents, images and video. Five stories this week: a draft and an internal memo seen by reporters, a classified memo described by officials, a huge cache of bank records, and an engineer who admitted trading on what he saw at work.
+
+<Roundup>
+  <Item headline="Former Robinhood engineer pleads guilty to trading on confidential listing plans" date="2026-11-16" source="https://www.justice.gov/usao-sdny/pr/former-robinhood-employee-pleads-guilty-fraud" sourceName="U.S. Department of Justice">
+    Huaisong Xiang pleaded guilty to wire fraud for trading ahead of Robinhood's cryptocurrency listings using the company's confidential plans, and agreed to forfeit $125,523. According to prosecutors, he had access to a private internal chat channel for employees designated to know which tokens were coming and when. That is a known group, but nothing here says a file left the company: he traded on what he read, and a watermark only traces a copy that turns up somewhere.
+  </Item>
+  <Item headline="An internal IRS memo on criminal investigations reaches The New York Times" date="2026-11-17" source="https://www.nytimes.com/2026/11/17/us/politics/irs-criminal-investigations.html" sourceName="The New York Times">
+    The Times viewed an internal IRS memo that describes at least four criminal investigations opened by agents assigned to a federal task force; the pages the Times saw do not name who is being investigated. An internal memo goes to a limited set of readers. If each copy carried its own watermark and the file itself was what the Times saw, detection could point to whose copy it was; if someone read it out or described it, there would be nothing to detect.
+  </Item>
+  <Item headline="Draft EU-UK summit conclusions reach Euronews before leaders meet" date="2026-11-18" source="https://www.euronews.com/2026/11/18/eu-uk-summit-leaked-draft-reveals-ambition-and-limits-of-brexit-reset" sourceName="Euronews">
+    Euronews reported from draft conclusions for the EU-UK summit, which it says were circulated to European governments on Tuesday evening. A draft sent to a fixed list of governments is the textbook case for a per-recipient watermark: a separate copy for each capital means that, if the file itself surfaced, detection would point to whose copy it was. A summary passed on by phone would not.
+  </Item>
+  <Item headline="More than 15 million internal Deutsche Bank records reach a global group of reporters" date="2026-11-18" source="https://www.aljazeera.com/news/2026/11/18/what-do-deutsche-bank-leaks-reveal-about-trump-epstein-and-russia" sourceName="Al Jazeera">
+    Al Jazeera, citing Le Monde, reports that two whistleblowers passed millions of emails, meeting minutes and internal reports to journalists, who shared them with more than 230 reporters; the bank says the concerns date back many years. The reporting doesn't say how the whistleblowers got the material. A per-recipient watermark could only speak to a file that went out as a tracked copy, such as a report sent to a set list of people; archived emails and records copied out of the bank's systems would carry nothing that points to a person.
+  </Item>
+  <Item headline="Officials describe a classified Hegseth memo restricting U.S.-Canada defense ties to The Washington Post" date="2026-11-20" source="https://www.washingtonpost.com/national-security/2026/11/20/secret-hegseth-memo-restricts-us-canada-defense-relationship/" sourceName="The Washington Post">
+    The Post reported, citing officials, that Defense Secretary Pete Hegseth issued a classified memo restricting the defense relationship with Canada, and the Post said it had not seen the memo itself; a Pentagon spokesman said it does not affect intelligence sharing or NORAD. When officials describe a document rather than hand it over, no file reaches the reporter, and a watermark has nothing to trace.
+  </Item>
+</Roundup>
+
+## Why it matters
+
+Only two of this week's five stories turn on a document that went to a known group and may have reached a reporter as a file: an IRS memo and a summit draft sent to European governments. The other three show the limits. A classified memo was described rather than shared, a cache of millions of bank emails and records was handed over by whistleblowers, by means the reporting doesn't describe, and an engineer acted on what he read without passing on a file.
+
+When each recipient gets a copy with its own invisible watermark, [detection](/docs/api/detect) reads the unique forensic ID from a leaked file, and you match it to the recipient you recorded. That covers PDFs, Word and PowerPoint files, images and video. It doesn't cover spreadsheets, audio, retyped or relayed text, records taken from a database, or information someone acts on without sharing a file, and it doesn't stop a leak. Our [guide to invisible watermarking](/resources/invisible-watermarking) covers where it works and where it doesn't.
